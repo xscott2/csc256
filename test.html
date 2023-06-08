@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>js event test</title>
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="event.css">
+</head>
+
+<body>
+  <h1>Forms Basics!</h1>
+  <!--log in form-->
+  <form action="/login">
+    <input type="text" placeholder="username" required />
+    <!--login username error-->
+    <div class="error" id="divusernameerr"></div>
+    <!--password-->
+    <input type="password" placeholder="password" required />
+    <!--password error-->
+    <div class="error" id="divpassworderr"></div>
+    <!--submit button-->
+    <input type="submit" value="GO!" />
+  </form>
+  <input type="text" placeholder="city" />
+  <button>Generic Button</button>
+<!--imput elements forms-->
+  <h2>Input Elements</h2>
+  <form action="">
+    <!--enail-->
+    <label for="email">Email:</label>
+    <input type="email" placeholder="email" id="email" />
+    <div class="error" id="divemailerr"></div>
+    <!--linked in account url-->
+    <label for="linkedin">Your Linkedin Profile</label>
+    <input type="url" id="linkedin" />
+    <div class="error" id="divlinkedinerr"></div>
+    <!--phone number-->
+    <input type="number" placeholder="phone number"/>
+    <div class="error" id="divnumbererr"></div>
+    <button>Submit</button>
+  </form>
+
+  <h2>The Name Attribute</h2>
+  <form action="">
+    <div>
+      <!--city-->
+      <label for="city">City:</label>
+      <input type="text" name="city" id="city" />
+      <div class="error" id="divcityerr"></div>
+    </div>
+    <div>
+      <!--state-->
+      <label for="state">State:</label>
+      <input type="text" name="USstate" id="state" />
+      <div class="error" id="divstateerr"></div>
+    </div>
+
+    <button>Submit</button>
+  </form>
+  <!--this is the pop up div code section-->
+  <div class="popup">
+    <button id="close">&times;</button>
+    <h2>this is my forms attempt</h2>
+    <p>
+      welcome to xaviers shitty attempt at creating forms and events
+    </p>
+    <a href="#">Let's Go</a>
+  </div>
+  <!--Script-->
+  <script src="event.js"></script>
+</body>
+
+</html>
