@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    /* Style the header */
+    .header {
+      background-color: #73026f;
+      padding: px;
+      text-align: center;
+    }
+
+    /* The navbar container */
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    /*Navbar links */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px 15px;
+      text-decoration: none;
+    }
+
+    /* Links - change color on hover */
+    .topnav a:hover {
+      background-color: goldenrod;
+      color: blue;
+    }
+
+
+    /*color and font size through out the page*/
+    body {
+      color: #CD7F32;
+      font-size: 20px;
+    }
+
+    h1 {
+      color: gold;
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 25px;
+    }
+
+    /*border and margin sizing and background */
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- css code link -->
+<link rel="stylesheet" href="slideshow.css">
+
+<body>
+
+  <!--header -->
+  <div class="header">
+    <h1>VR/AR capability</h1>
+  </div>
+  <!--nav bar along the top-->
+  <div class="topnav">
+    <style></style>
+    <a href="#">Virtual Reality</a>
+    <a href="#">Augmented Reality</a>
+    <a href="#">Mixed Reality</a>
+  </div>
+  <div class="flex-container">
+ 
+      <div style=" flex: 20%;"><h2>VR(virtual-reality)</h2>
+      <!--<p>this is a example of website layout left side.</p>-->
+      <p>The idea or theory behind VR(virtual-reality) was developed as far back as the 1800's</p>
+      <p>the implimentation of this technology however was not applaied until the late 1970's</p>
+      <p>the picture to the right is one of the early attempts at a VR headset.</p>
+      </div>
+      <div style=" flex: 60%;">slide show
+        <!-- Slideshow container -->
+        <div id="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="VR-first-attempt.jpg" style="width:100%">
+          <p>one of the earliest attempts at creating a VR headset with the technology of the 1060's</p>
+          <p></p>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="mining-overlay.jpg" style="width:100%">
+          <p>using augmented reality the wearer can see demographic information in the area.</p>
+          <p>augmented reality allows the wearer to see things in a different light so to speak things such as elevation,
+            density and sustainability information will be displayed</p>
+        </div>
+     
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="TecknoSIM-VR-Training-for-mines-.jpg" style="width:100%">
+      <p>training and colaberation in the mining industry</p>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"> 4 / 4</div>
+      <img src="oil-rig-repair-using-AR.jpg" style="width:100%">
+      <p>maintaince and monitoring using AR overlay technology</p>
+    </div>
+
+ <!--The dots/circles-->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  
+  </div>
+    <div style=" flex: 20%;"><h2>AR(Augmented-reality)</h2>
+    <p>consider this for a moment AR is almost 60 years old as of 2023
+      it was created by ivan sutherland
+    </p>
+    <p>here is a youtube video of one of the first functional VR systems morton heilig's sensoroma</p>
+    <p><a href="https://youtu.be/vSINEBZNCks">Morton Heilig's Sensorama (Interview)</a></p>
+  </div>
+  </div>
+  <div class="popup">
+    <button id="close">&times;</button>
+
+    <h2>welcome to a small overview of VR and AR</h2>
+    <p>
+      here is a video of how VR and AR can be used in the mining industry
+      <a href="https://www.youtube.com/watch?v=wTSrXWkBN-o ">VR in the mining industry</a>
+    </p>
+    <a href="#" onclick="closeWin();">Let's Go</a>
+  </div>
+  <div id="overlay"></div>
+
+  <!--<p>images on this site are not mine and i take no ownership of them</p>
+  <p>reference sites are listed below</p>
+  <p>
+  <a href="https://www.google.com/search?q=AR+capability+for+mining"></a>
+  
+  <a href="https://tecknotrove.com/newsletter/vr-simulation-solutions-for-the-mining-industry-2/"></a>
+  
+  <a href="https://pluto-men.com/solution/oil-gas/"></a>
+  <a href="https://www.fi.edu/en/virtual-reality/history-of-virtual-reality"></a>
+  <a href="https://www.fi.edu/en/science-virtual-reality"></a>
+  <a href="https://virtualspeech.com/blog/history-of-vr"></a>
+  <a href="https://en.wikipedia.org/wiki/Augmented_reality"></a>
+  <a href="https://svarmony.com/blog/history-of-ar/#:~:text=AR%20found%20its%20origin%20in,to%20view%20images%20in%203D."></a>
+  <a href=""></a>
+  <a href=""></a>
+  <a href=""></a>
+  <a href=""></a>  
+  </p>
+  
+  
+  --->
+  </div>
+
+  <!-- java script code link-->
+  <script type="text/javascript" src="slideshow.js"></script>
+
+</body>
+
+</html>
